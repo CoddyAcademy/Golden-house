@@ -1,0 +1,113 @@
+.main{
+
+    &__hero{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 100px;
+        &__left{
+            padding-right: 100px;
+            order: 1;
+            &_title{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 72px;
+                display: flex;
+                align-items: center;
+                color: #000000;
+              
+            }
+            &_text{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                margin-top: 20px;
+                color: #828282;
+               
+            }
+            &_btn{
+                width: 140px;
+                height: 56px;
+                background-color: #316499;
+                border: none;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 50px;
+                color: #ffffff;
+            }
+
+        }
+        &_right{
+            max-width: 782px;
+            width: 100%;
+            order: 2;
+            min-height: 492px;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .main{
+
+        &__hero{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top:0px;
+            flex-direction: column;
+            &__left{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding-right: 0;
+                justify-content: center;
+                order: 2;
+                &_title{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    color: #000000;
+                   
+                    text-align: center;
+                    line-height:30px;
+                    margin: 0px auto;
+                }
+                &_text{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-top: 20px;
+                    color: #828282;
+                    text-align: center;
+                  
+                   
+                }
+                &_btn{
+                    width: 140px;
+                    height: 56px;
+                    background-color: #316499;
+                    border: none;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-top: 20px;
+                    color: #ffffff;
+                }
+    
+            }
+            &_right{
+                max-width: 500px;
+                margin: -90px auto;
+                height: 492px;
+                order: 1;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,139 @@
+.header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-top: 26px;
+    padding-bottom: 26px;
+   
+    &__section{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        
+        position: sticky;
+        top: 0;
+        
+
+        &__logo{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        &__menu{
+            display: flex;
+            gap: 79px;
+            align-items: center;
+            &__li{
+                &_link{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: black;
+                    &:hover{
+                        color: #316499;
+                    }
+                }
+            }
+        }
+        &__burger{
+            display: flex;
+            align-items: center;
+            &_btn{
+                width: 165px;
+                height: 42px;
+                background-color: #316499;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                border: none;
+                
+                color: #ffffff;
+                &:hover{
+                    background-color: transparent;
+                    border: 1px solid #316499;
+                    color: #316499;
+                }
+            }
+            &_bar{
+                color: black;
+                font-size: 30px;
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media(max-width:600px){
+    .header{
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &__section{
+            display: flex;
+            align-items:flex-start;
+            justify-content: space-between;
+            
+    
+            &__logo{
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                &_img{
+                    width:50px;
+                }
+                &_text{
+                    width: 120px;
+                }
+            }
+            &__menu{
+                display: flex;
+                gap: 79px;
+                align-items: center;
+                display: none;
+                &__li{
+                    &_link{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 30px;
+                        color: black;
+                        &:hover{
+                            color: #316499;
+                        }
+                    }
+                }
+            }
+            &__burger{
+                display: flex;
+                align-items: flex-start;
+                &_btn{
+                    width: 165px;
+                    height: 42px;
+                    background-color: #316499;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    border: none;
+                    
+                    color: #ffffff;
+                    display: none;
+                    &:hover{
+                        background-color: transparent;
+                        border: 1px solid #316499;
+                        color: #316499;
+                    }
+                }
+                &_bar{
+                    color: black;
+                    font-size: 30px;
+                    margin-top: -5px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

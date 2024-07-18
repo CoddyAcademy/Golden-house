@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins';font-size: 22px;
+}
+.our{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #316499;
+    text-align: center;
+    margin-top: 60px;
+}
+@media(max-width:600px){
+    .our{
+        font-size: 28px;
+        margin-top: 30px;
+    }
+}
